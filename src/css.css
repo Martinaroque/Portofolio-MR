@@ -1,0 +1,216 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+head {
+  margin: 0;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #83cee0;
+  color: white;
+  padding: 10px;
+}
+.title {
+  margin-left: 10px;
+}
+.navBar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 10px;
+}
+.navBar-links li {
+  list-style: none;
+}
+.navBar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+.navBar-links li a:hover {
+  color: black;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+}
+
+ASide {
+  margin-right: 100px;
+}
+.sideBar {
+  display: flex;
+  padding: 20px;
+}
+.sideBarMenu {
+  flex: 1 1 0;
+  padding: 10px;
+  max-width: 100px;
+  background: #83cee0;
+  border-radius: 4px;
+}
+.sideBarMenu .menu {
+  margin: 0 -1rem;
+}
+.sideBarMenu .menu a {
+  margin: 20px;
+}
+
+.sideBarMenu .menu .menu-item {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 200ms linear ease-in-out;
+}
+.sideBarMenu .menu .menu-item:hover {
+  color: black;
+  border-right: 2px solid black;
+}
+.about h2 {
+  margin: 20px;
+}
+.about p {
+  text-align: center;
+  line-height: 2;
+}
+.experiance h2 {
+  margin: 20px;
+}
+.skills h2 {
+  margin: 20px;
+}
+
+.skills .progress {
+  margin: 15px;
+}
+.projects h2 {
+  margin: 30px;
+}
+.projects .container {
+  display: grid;
+  grid-gap: 10px;
+}
+.projects .col-3 {
+  display: flex;
+
+  justify-content: center;
+}
+
+.projects .card-text {
+  font-size: 12px;
+}
+.projects .card-body h5 {
+  margin: 10px;
+}
+.projects .card-body p {
+  margin: 10px;
+}
+.projects .card-body a {
+  margin: 10px;
+}
+.contacs {
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contacs a {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#btnTop {
+  position: fixed;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  bottom: 30px;
+  text-decoration: none;
+  background-color: #83cee0;
+}
+
+@media (max-width: 900px) {
+  .experiance {
+    font-size: 15px;
+  }
+  .sideBarMenu {
+    flex: 1 1 0;
+    padding: 10px;
+    max-width: 100px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+  }
+  .menu-item {
+    background-color: #83cee0;
+    border-radius: 4px;
+    margin-right: 0;
+    display: none;
+  }
+
+  .details {
+    margin-left: 0;
+  }
+  .projects .container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .projects .col-3 {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .projects .row {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navBar-links {
+    display: none;
+    width: 100%;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navBar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navBar-links li {
+    text-align: center;
+  }
+  .navBar-links li a {
+    padding: 3px;
+  }
+  .navBar-links.active {
+    display: flex;
+  }
+}
